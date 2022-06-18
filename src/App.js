@@ -1,10 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import picture from './constants/skims.jpeg';
+import myLogo from './constants/1801.png'
 
 function App() {
   return (
     <>
+
+    <img src={myLogo} alt='logo' className='main-logo'/>
+    <div></div>
 
     <img src={picture} alt='temp' className='model-picture'/>
 
