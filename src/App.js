@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import picture from './constants/skims.jpeg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    <img src={picture} alt='temp' className='model-picture'/>
+
+    <div>GREY BODYCON DRESS</div>
+    <div>SIZES</div>
+
+      <div className="payment-container">
+        <div className="button-container">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+        
+      </div>
+      <div>
+          DESCRIPTION
+        </div>
+        <div>
+          SIZE GUIDE
+        </div>
+        <div>
+          RETURNS POLICY
+        </div>
+    </>
   );
 }
 

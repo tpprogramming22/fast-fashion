@@ -28,11 +28,62 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 100px;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+
+i:hover {
+  filter: brightness(1000%);
+}
+
+i:active {
+  transform: translate(0,0.3rem);
+  box-shadow: 0 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: darkgrey;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(0, 0, 0, 0.7);
+}
+
+.image-above {
+  margin-top: 90px;
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.model-picture {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
 }
