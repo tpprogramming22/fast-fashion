@@ -19,6 +19,7 @@ function App() {
       <h2>Sizes</h2>
       <p>XS S M L XL</p>
     </div>
+    <h2>£29.99</h2>
     <div className="payment-container">
         <div className="button-container">
           <i class="fa-brands fa-cc-visa"></i>
