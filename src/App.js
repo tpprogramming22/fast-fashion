@@ -12,24 +12,33 @@ function App() {
 
     <img src={picture} alt='temp' className='model-picture'/>
 
-    <div>GREY BODYCON DRESS</div>
-    <div>SIZES</div>
-
-      <div className="payment-container">
+    <div>
+      <h1>Grey Bodycon Dress</h1>
+    </div>
+    <div>
+      <h2>Sizes</h2>
+      <p>XS S M L XL</p>
+    </div>
+    <div className="payment-container">
         <div className="button-container">
           <i class="fa-brands fa-cc-visa"></i>
           <i class="fa-brands fa-cc-apple-pay"></i>
         </div>
+      
         
       </div>
       <div>
-          DESCRIPTION
+          <h2>Description</h2>
+          <p>This trending bodycon maxi dress had got 20% x and 80% y with sizes ranging from XS to XL</p>
         </div>
         <div>
-          SIZE GUIDE
+          <h2>Size Guide
+          </h2>
+          <p>This is the size guide. Blah blah blah...</p>
         </div>
         <div>
-          RETURNS POLICY
+          <h2>Returns Policy</h2>
+          <p>Due to us buying it from aliexpress at a much cheaper rate we are unfortunately unable to offer refunds or returns.</p>
         </div>
     </>
   );

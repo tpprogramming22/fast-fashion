@@ -35,13 +35,15 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.7);
-  margin-top: 100px;
+  background-color: #fefeff;
+  /* margin-top: 100px; */
 }
 
 .button-container {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  z-index: 10;
 }
 
 i {
@@ -94,4 +96,9 @@ button {
   max-height: 300px;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+p {
+  display: block;
+  width: 400px;
 }
