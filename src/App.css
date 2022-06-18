@@ -73,7 +73,8 @@ button {
 }
 
 .image-above {
-  margin-top: 90px;
+  padding-top: 200px;
+  margin-top: 110px;
   width: auto;
   max-width: 900px;
   padding: 20px 30px;
@@ -86,4 +87,5 @@ button {
   max-width: 300px;
   max-height: 300px;
   border-radius: 10px;
+  margin-top: 20px;
 }
