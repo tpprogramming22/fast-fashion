@@ -7,6 +7,7 @@ import Sizes from "./components/sizes/sizes.component";
 function App() {
   return (
     <>
+    <div className='content-container'>
       <img src={myLogo} alt="logo" className="main-logo" />
       <div></div>
 
@@ -16,7 +17,7 @@ function App() {
         <h1>Grey Bodycon Dress</h1>
       </div>
       <div>
-        <h2>Sizes</h2>
+        <p className="red-paragraph">Last size left!</p>
         <Sizes />
       </div>
       <h2>£29.99</h2>
@@ -43,6 +44,7 @@ function App() {
           Due to us buying it from aliexpress at a much cheaper rate we are
           unfortunately unable to offer refunds or returns.
         </p>
+      </div>
       </div>
     </>
   );
