@@ -3,6 +3,9 @@ import "./App.css";
 import picture from "./constants/skims.jpeg";
 import myLogo from "./constants/18011.png";
 import Sizes from "./components/sizes/sizes.component";
+import Description from "./components/description/description.component";
+import SizeGuide from "./components/size-guide/size-guide.component";
+import ReturnsPolicy from "./components/returns-policy/returns-policy-components";
 
 function App() {
   return (
@@ -28,22 +31,26 @@ function App() {
         </div>
       </div>
       <div>
-        <h2>Description</h2>
+      <Description />
+        {/* <h2>Description</h2>
         <p>
           This trending bodycon maxi dress had got 20% x and 80% y with sizes
           ranging from XS to XL
-        </p>
+        </p> */}
       </div>
       <div>
-        <h2>Size Guide</h2>
-        <p>This is the size guide. Blah blah blah...</p>
+        <SizeGuide />
+        {/* <h2>Size Guide</h2>
+        <p>This is the size guide. Blah blah blah...</p> */}
       </div>
       <div>
-        <h2>Returns Policy</h2>
+        <ReturnsPolicy />
+        {/* <h2>Returns Policy</h2>
         <p>
-          Due to us buying it from aliexpress at a much cheaper rate we are
+        Due to us buying it from aliexpress at a much cheaper rate we are
           unfortunately unable to offer refunds or returns.
-        </p>
+        </p> */}
+        <p></p>
       </div>
       </div>
     </>

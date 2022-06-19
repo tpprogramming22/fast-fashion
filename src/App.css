@@ -47,17 +47,15 @@
   z-index: 10;
 }
 
-i {
+
+.fa-brands {
   font-size: 4rem;
   cursor: pointer;
 }
 
 
-i:hover {
-  filter: brightness(1000%);
-}
 
-i:active {
+.fa-brands:active {
   transform: translate(0,0.3rem);
   box-shadow: 0 0.1rem rgba(0, 0, 0, 0.4);
 }
