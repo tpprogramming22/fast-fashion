@@ -3,17 +3,17 @@ button {
     padding: 5px;
 }
 
-
-
 span {
     width: auto;
     padding: 10px 20px;
     box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.7);
     margin: 10px;
     border-radius: 10px;
+    -webkit-appearance: none;
 }
 
 .selected {
     background-color: black;
     color: white;
+    -webkit-appearance: none;
 }
