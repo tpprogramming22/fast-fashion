@@ -18,14 +18,43 @@ const ApplePay = () => {
       requestPayerName: true,
       total: {
         label: "Demo Payment",
-        amount: 1999,
+        amount: 2999,
       },
     });
+
+
     pr.canMakePayment().then((result) => {
       if (result) {
         setPaymentRequest(pr);
       }
     });
+
+    pr.on('paymentmethod', async(e) => {
+        const {clientSecret} = await fetch("/.netlify/functions/create-payment-intent", {
+            method: "post",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ amount: 2999 }),
+          }).then(r => r.json());
+
+          const {error, paymentIntent} = await stripe.confirmCardPayment(
+            clientSecret, {
+                payment_method: e.paymentMethod.id,
+            }, {
+                handleActions: false,
+            }
+          )
+          if(error){
+            e.complete('fail');
+            return;
+          }
+          e.complete('success');
+          if(paymentIntent.status == 'requires_action'){
+            stripe.confirmCardPayment(clientSecret);
+          }
+    })
+
   }, [stripe, elements]);
   return (
     <div>
