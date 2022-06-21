@@ -31,7 +31,7 @@ function App() {
           <i class="fa-brands fa-cc-apple-pay"></i>
         </div>
       </div>
-      <a href="https://buy.stripe.com/test_5kAeV66fr2fI7BucMM">PAY NOW</a>
+      <a href="https://buy.stripe.com/bIY7tmdX92Lye7SfYY">PAY NOW</a>
       <div>
       <Description />
         {/* <h2>Description</h2>
