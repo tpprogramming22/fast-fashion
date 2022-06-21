@@ -7,6 +7,7 @@ import Description from "./components/description/description.component";
 import SizeGuide from "./components/size-guide/size-guide.component";
 import ReturnsPolicy from "./components/returns-policy/returns-policy-components";
 import PaymentForm from "./components/payment-form/payment-form.component";
+import ApplePay from "./components/payment-form/ApplePay";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
       </div>
       <a href="https://buy.stripe.com/bIY7tmdX92Lye7SfYY">PAY NOW</a>
       <div>
+
+        <ApplePay />
       <Description />
         {/* <h2>Description</h2>
         <p>
