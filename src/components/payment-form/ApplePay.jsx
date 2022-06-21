@@ -14,11 +14,11 @@ const ApplePay = () => {
     const pr = stripe.paymentRequest({
       currency: "gbp",
       country: "GB",
-      requestPayerEmail: true,
-      requestPayerName: true,
+      // requestPayerEmail: true,
+      // requestPayerName: true,
       total: {
         label: "Demo Payment",
-        amount: 2999,
+        amount: 1999,
       },
     });
 
