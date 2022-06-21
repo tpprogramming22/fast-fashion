@@ -6,6 +6,7 @@ const ApplePay = () => {
   const stripe = useStripe();
   const elements = useElements();
   const [paymentRequest, setPaymentRequest] = useState(null);
+  const [seeTest, setSeeTest] = useState(false);
 
   useEffect(() => {
     if (!stripe || !elements) {
@@ -58,6 +59,7 @@ const ApplePay = () => {
             e.complete('fail');
             return;
           }
+          setSeeTest(true);
           e.complete('success');
           if(paymentIntent.status == 'requires_action'){
             stripe.confirmCardPayment(clientSecret)
@@ -70,6 +72,8 @@ const ApplePay = () => {
       <h1>Apple Pay</h1>
 
       {paymentRequest && <PaymentRequestButtonElement options={{paymentRequest}}/>}
+
+      {seeTest && <h1>its true!</h1>}
     </div>
   );
 };
