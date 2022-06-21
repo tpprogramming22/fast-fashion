@@ -16,6 +16,7 @@ const ApplePay = () => {
       country: "GB",
       // requestPayerEmail: true,
       // requestPayerName: true,
+      paymentMethod: 'card',
       total: {
         label: "Demo Payment",
         amount: 1999,
@@ -29,14 +30,22 @@ const ApplePay = () => {
       }
     });
 
-    pr.on('paymentmethod', async(e) => {
+    pr.on('paymentmethod', async (e) => {
         const {clientSecret} = await fetch("/.netlify/functions/create-payment-intent", {
             method: "post",
             headers: {
               "Content-Type": "application/json",
             },
-            
-          }).then(r => r.json());
+            body: JSON.stringify(
+              {
+                paymentMethodType: 'card',
+                currency: 'gbp',
+              }
+            ),
+          }
+          
+          
+          ).then(r => r.json());
 
           const {error, paymentIntent} = await stripe.confirmCardPayment(
             clientSecret, {
