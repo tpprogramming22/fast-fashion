@@ -50,11 +50,17 @@ const ApplePay = () => {
 
           const {error, paymentIntent} = await stripe.confirmCardPayment(
             clientSecret, {
-                payment_method: e.paymentMethodType,
+              payment_method: {
+                card: elements.getElement(PaymentRequestButtonElement),
+                billing_details: {
+                    name: 'Test user'
+                }
+            }
             }, {
                 handleActions: false,
             }
           )
+
           if(error){
             e.complete('fail');
             return;
