@@ -6,6 +6,7 @@ import Sizes from "./components/sizes/sizes.component";
 import Description from "./components/description/description.component";
 import SizeGuide from "./components/size-guide/size-guide.component";
 import ReturnsPolicy from "./components/returns-policy/returns-policy-components";
+import PaymentForm from "./components/payment-form/payment-form.component";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <i class="fa-brands fa-cc-apple-pay"></i>
         </div>
       </div>
+      <a href="https://buy.stripe.com/test_5kAeV66fr2fI7BucMM">PAY NOW</a>
       <div>
       <Description />
         {/* <h2>Description</h2>
