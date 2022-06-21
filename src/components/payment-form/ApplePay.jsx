@@ -49,7 +49,7 @@ const ApplePay = () => {
 
           const {error, paymentIntent} = await stripe.confirmCardPayment(
             clientSecret, {
-                payment_method: 'card',
+                payment_method: e.paymentMethodType,
             }, {
                 handleActions: false,
             }
