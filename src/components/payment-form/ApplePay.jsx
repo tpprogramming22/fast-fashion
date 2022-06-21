@@ -35,7 +35,7 @@ const ApplePay = () => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ amount: 2999 }),
+            
           }).then(r => r.json());
 
           const {error, paymentIntent} = await stripe.confirmCardPayment(
@@ -51,7 +51,7 @@ const ApplePay = () => {
           }
           e.complete('success');
           if(paymentIntent.status == 'requires_action'){
-            stripe.confirmCardPayment(clientSecret);
+            stripe.confirmCardPayment(clientSecret)
           }
     })
 
