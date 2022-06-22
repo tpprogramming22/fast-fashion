@@ -30,7 +30,7 @@ const ApplePay = () => {
       }
     });
 
-    paymentRequest.on('paymentmethod', async (e) => {
+    pr.on('paymentmethod', async (e) => {
         const {clientSecret} = await fetch("/.netlify/functions/create-payment-intent", {
             method: "post",
             headers: {
